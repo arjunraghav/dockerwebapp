@@ -3,7 +3,7 @@ services:
     webserver:
         image: arjunraghava/webapp:0.1
         ports: 
-            - 20000:80
+            - 25000:80
         deploy:
             mode: replicated
             replicas: 2
