@@ -6,7 +6,7 @@ services:
             - 55000:80
         deploy:
             mode: replicated
-            replicas: 2
+            replicas: 1
        
         healthcheck:
             test: ["CMD", "curl", "-f", "http://localhost"]
