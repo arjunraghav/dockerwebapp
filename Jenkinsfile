@@ -26,7 +26,7 @@ pipeline {
         stage('deploy docker service'){
             steps{
                 echo "========deploying docker service========"
-                sh '/usr/local/bin/docker-compose up -d'
+                sh 'yes y | /usr/local/bin/docker-compose up -d'
             }
         }
         stage('test service'){
